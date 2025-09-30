@@ -1,15 +1,22 @@
 {
-  "name": "oauth",
-  "module": "index.ts",
   "type": "module",
-  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "test": "turbo test",
+    "lint": "turbo lint",
+    "type-check": "turbo type-check",
+    "clean": "turbo clean"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "turbo": "^2.5.8"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
-  "dependencies": {
-    "effect": "^3.17.14"
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
   }
 }

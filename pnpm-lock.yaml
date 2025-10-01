@@ -21,13 +21,28 @@ importers:
 
   apps/authorization:
     dependencies:
+      drizzle-orm:
+        specifier: ^0.44.5
+        version: 0.44.5(bun-types@1.2.23(@types/react@19.1.15))(postgres@3.4.7)
+      effect:
+        specifier: ^3.18.0
+        version: 3.18.0
+      postgres:
+        specifier: ^3.4.7
+        version: 3.4.7
       typescript:
         specifier: ^5
         version: 5.9.2
+      zod:
+        specifier: ^4.1.11
+        version: 4.1.11
     devDependencies:
       '@types/bun':
         specifier: latest
         version: 1.2.23(@types/react@19.1.15)
+      drizzle-kit:
+        specifier: ^0.31.5
+        version: 0.31.5
 
   apps/pokemon:
     dependencies:
@@ -574,6 +589,9 @@ packages:
   undici-types@7.13.0:
     resolution: {integrity: sha512-Ov2Rr9Sx+fRgagJ5AX0qvItZG/JKKoBRAVITs1zk7IqZGTJUwgUr7qoYBpWwakpWilTZFM98rG/AFRocu10iIQ==}
 
+  zod@4.1.11:
+    resolution: {integrity: sha512-WPsqwxITS2tzx1bzhIKsEs19ABD5vmCVa4xBo2tq/SrV4RNZtfws1EnCWQXM6yh8bD08a1idvkB5MZSBiZsjwg==}
+
 snapshots:
 
   '@drizzle-team/brocli@0.10.2': {}
@@ -896,3 +914,5 @@ snapshots:
   typescript@5.9.2: {}
 
   undici-types@7.13.0: {}
+
+  zod@4.1.11: {}
